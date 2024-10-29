@@ -8,10 +8,10 @@
 @media only screen and (min-width: 0rem) {
     // Website colors
     :root {
-        --primary: #ffba19;
-        --primaryLight: #ffd675;
-        --secondary: #001f3f;
-        --secondaryLight: #001f3f;
+        --primary: #506e53;
+        --primaryLight: #93ac95;
+        --secondary: #c6cab1;
+        --secondaryLight: #f4f4ef;
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
         --bodyTextColorWhite: #fafbfc;
@@ -66,22 +66,21 @@
         position: relative;
         display: inline-block;
         background-color: var(--primary);
+        color: var(--secondaryLight);
         width: auto;
         padding: 0 (30/16rem);
         text-decoration: none;
-        text-transform: uppercase;
         font-size: (16/16rem);
         line-height: (50/16em);
         font-weight: bold;
 
         // Transition Properties
-        color: #000;
         transition: color 0.3s;
         transition-delay: 0.1s;
         text-align: center;
 
         &:hover {
-            color: #fff;
+            color: #000;
             &:before {
                 width: 100%;
             }
@@ -95,7 +94,7 @@
             content: "";
             opacity: 1;
             display: block;
-            background-color: #000;
+            background-color: var(--primaryLight);
             height: 100%;
 
             //Transition properties
@@ -557,7 +556,7 @@
             content: "";
             opacity: 0;
             display: block;
-            background: rgba(0, 0, 0, 0.6);
+            background: var(--primaryLight);
             height: 100vh;
             width: 0%;
             transition: width 0.5s, opacity 0.3s;
